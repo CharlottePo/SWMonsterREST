@@ -7,6 +7,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -17,11 +18,15 @@ import com.chapaul.ws.repository.MonsterRepository;
  * @author Paul
  *
  */
+@CrossOrigin 
 @RestController
 public class MonsterController {
 
 	@Autowired
 	private MonsterRepository monsterRepository;
+	
+	
+	
 
 	@RequestMapping("/monsters")
 	public List<Monster> getMonsters() {
