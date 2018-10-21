@@ -16,14 +16,14 @@ public class Monster {
 	private String name;
 	private int natLevel;
 	// Stats
-	private int basePV;
-	private int baseATQ;
-	private int baseDEF;
-	private int baseVIT;
-	private Double baseCritTx;
-	private Double baseCritDgt;
-	private Double baseRES;
-	private Double basePREC;
+	private int basePv;
+	private int baseAtq;
+	private int baseDef;
+	private int baseVit;
+	private Double baseTxCrit;
+	private Double baseDgtCrit;
+	private Double baseRes;
+	private Double basePrec;
 	// End Default stats
 	private int nbStars;
 	private int level;
@@ -56,21 +56,23 @@ public class Monster {
 		super();
 	}
 
-	public Monster(String name, int natLevel, int basePV, int baseATQ, int baseDEF, int baseVIT, Double baseCritTx,
-			Double baseCritDgt, Double baseRES, Double basePREC, int nbStars, int level, List<Rune> runes) {
+	public Monster(String name, int natLevel, int basePv, int baseAtq, int baseDef, int baseVit, Double baseTxCrit,
+			Double baseDgtCrit, Double baseRes, Double basePrec, int nbStars, int level, int maxLevel,
+			List<Rune> runes) {
 		super();
 		this.name = name;
 		this.natLevel = natLevel;
-		this.basePV = basePV;
-		this.baseATQ = baseATQ;
-		this.baseDEF = baseDEF;
-		this.baseVIT = baseVIT;
-		this.baseCritTx = baseCritTx;
-		this.baseCritDgt = baseCritDgt;
-		this.baseRES = baseRES;
-		this.basePREC = basePREC;
+		this.basePv = basePv;
+		this.baseAtq = baseAtq;
+		this.baseDef = baseDef;
+		this.baseVit = baseVit;
+		this.baseTxCrit = baseTxCrit;
+		this.baseDgtCrit = baseDgtCrit;
+		this.baseRes = baseRes;
+		this.basePrec = basePrec;
 		this.nbStars = nbStars;
 		this.level = level;
+		this.maxLevel = maxLevel;
 		this.runes = runes;
 	}
 
@@ -120,123 +122,123 @@ public class Monster {
 	}
 
 	/**
-	 * @return the basePV
+	 * @return the basePv
 	 */
-	public int getBasePV() {
-		return basePV;
+	public int getBasePv() {
+		return basePv;
 	}
 
 	/**
-	 * @param basePV
-	 *            the basePV to set
+	 * @param basePv
+	 *            the basePv to set
 	 */
-	public void setBasePV(int basePV) {
-		this.basePV = basePV;
+	public void setBasePv(int basePv) {
+		this.basePv = basePv;
 	}
 
 	/**
-	 * @return the baseATQ
+	 * @return the baseAtq
 	 */
-	public int getBaseATQ() {
-		return baseATQ;
+	public int getBaseAtq() {
+		return baseAtq;
 	}
 
 	/**
-	 * @param baseATQ
-	 *            the baseATQ to set
+	 * @param baseAtq
+	 *            the baseAtq to set
 	 */
-	public void setBaseATQ(int baseATQ) {
-		this.baseATQ = baseATQ;
+	public void setBaseAtq(int baseAtq) {
+		this.baseAtq = baseAtq;
 	}
 
 	/**
-	 * @return the baseDEF
+	 * @return the baseDef
 	 */
-	public int getBaseDEF() {
-		return baseDEF;
+	public int getBaseDef() {
+		return baseDef;
 	}
 
 	/**
-	 * @param baseDEF
-	 *            the baseDEF to set
+	 * @param baseDef
+	 *            the baseDef to set
 	 */
-	public void setBaseDEF(int baseDEF) {
-		this.baseDEF = baseDEF;
+	public void setBaseDef(int baseDef) {
+		this.baseDef = baseDef;
 	}
 
 	/**
-	 * @return the baseVIT
+	 * @return the baseVit
 	 */
-	public int getBaseVIT() {
-		return baseVIT;
+	public int getBaseVit() {
+		return baseVit;
 	}
 
 	/**
-	 * @param baseVIT
-	 *            the baseVIT to set
+	 * @param baseVit
+	 *            the baseVit to set
 	 */
-	public void setBaseVIT(int baseVIT) {
-		this.baseVIT = baseVIT;
+	public void setBaseVit(int baseVit) {
+		this.baseVit = baseVit;
 	}
 
 	/**
-	 * @return the baseCritTx
+	 * @return the baseTxCrit
 	 */
-	public Double getBaseCritTx() {
-		return baseCritTx;
+	public Double getBaseTxCrit() {
+		return baseTxCrit;
 	}
 
 	/**
-	 * @param baseCritTx
-	 *            the baseCritTx to set
+	 * @param baseTxCrit
+	 *            the baseTxCrit to set
 	 */
-	public void setBaseCritTx(Double baseCritTx) {
-		this.baseCritTx = baseCritTx;
+	public void setBaseTxCrit(Double baseTxCrit) {
+		this.baseTxCrit = baseTxCrit;
 	}
 
 	/**
-	 * @return the baseCritDgt
+	 * @return the baseDgtCrit
 	 */
-	public Double getBaseCritDgt() {
-		return baseCritDgt;
+	public Double getBaseDgtCrit() {
+		return baseDgtCrit;
 	}
 
 	/**
-	 * @param baseCritDgt
-	 *            the baseCritDgt to set
+	 * @param baseDgtCrit
+	 *            the baseDgtCrit to set
 	 */
-	public void setBaseCritDgt(Double baseCritDgt) {
-		this.baseCritDgt = baseCritDgt;
+	public void setBaseDgtCrit(Double baseDgtCrit) {
+		this.baseDgtCrit = baseDgtCrit;
 	}
 
 	/**
-	 * @return the baseRES
+	 * @return the baseRes
 	 */
-	public Double getBaseRES() {
-		return baseRES;
+	public Double getBaseRes() {
+		return baseRes;
 	}
 
 	/**
-	 * @param baseRES
-	 *            the baseRES to set
+	 * @param baseRes
+	 *            the baseRes to set
 	 */
-	public void setBaseRES(Double baseRES) {
-		this.baseRES = baseRES;
+	public void setBaseRes(Double baseRes) {
+		this.baseRes = baseRes;
 	}
 
 	/**
-	 * @return the basePREC
+	 * @return the basePrec
 	 */
-	public Double getBasePREC() {
-		return basePREC;
+	public Double getBasePrec() {
+		return basePrec;
 	}
 
 	/**
-	 * @param basePREC
-	 *            the basePREC to set
+	 * @param basePrec
+	 *            the basePrec to set
 	 */
-	public void setBasePREC(Double basePREC) {
-		this.basePREC = basePREC;
+	public void setBasePrec(Double basePrec) {
+		this.basePrec = basePrec;
 	}
 
 	/**
@@ -282,6 +284,14 @@ public class Monster {
 	 */
 	public void setRunes(List<Rune> runes) {
 		this.runes = runes;
+	}
+
+	/**
+	 * @param maxLevel
+	 *            the maxLevel to set
+	 */
+	public void setMaxLevel(int maxLevel) {
+		this.maxLevel = maxLevel;
 	}
 
 }
